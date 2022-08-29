@@ -107,7 +107,7 @@
     text-transform: uppercase;
   }
   
-  .navbar-nav ul li::after{
+  nav ul li::after{
     display:none;
   }
 
@@ -194,4 +194,194 @@
     --px: 40px; /* padding left & padding right */
     --mb: 120px; /* margin bottom */
   }
+
+
+
+
+  /*-----------------------------------*\
+    #HEADER
+  \*-----------------------------------*/
+
+  /**
+  * header section responsive
+  */
+
+  .banner h1 {
+    padding: 22px;
+  }
+
+
+
+  /*-----------------------------------*\
+    #ABOUT
+  \*-----------------------------------*/
+
+  /**
+  * about section responsive
+  */
+
+  .about .content-box {
+    padding: 0 50px;
+  }
+
+
+  /*-----------------------------------*\
+    #FOOTER
+  \*-----------------------------------*/
+
+  /**
+  * footer section responsive
+  */
+
+  footer {
+    padding: 55px var(--px);
+  }
+
+  .footer-left {
+    margin-bottom: 50px;
+  }
+
+  .footer-brand {
+    margin-bottom: 30px;
+  }
+
+}
+
+
+ /**
+ * resposive for tablet screen
+ */
+ 
+ @media screen and (max-width: 576px) {
+  
+  /*-----------------------------------*\
+    #GLOBAL
+  \*-----------------------------------*/
+
+  /**
+  * all global variables
+  */
+
+    :root {  
+        /**
+    * typography 
+    */
+
+    --fs-h1: 2.6em;
+    --fs-h2: 2.1em;
+    --fs-h3: 1.6em;
+
+    /**
+    * spacing 
+    */
+    --px: 40px; /* padding left & padding right */
+    --mb: 120px; /* margin bottom */
+  }
+
+  
+
+
+
+  /*-----------------------------------*\
+    #HEADER
+  \*-----------------------------------*/
+
+  /**
+  * header section responsive
+  */
+
+  header {
+    background: url(../images/mobile/image-hero.jpg) center no-repeat;
+    background-size: cover;
+    padding: 40px var(--px);
+  }
+
+  /**
+  * navbar responsive
+  */
+
+  .navbar {
+    margin-bottom: 160px;
+  }
+
+  .navbar-brand img {
+    max-width: 145px;
+  }
+
+  .banner h1{
+    margin-bottom: 175px;
+  }
+
+  /*-----------------------------------*\
+    #ABOUT
+  \*-----------------------------------*/
+
+  /**
+  * about section responsive
+  */
+
+  .about .img-box {
+    margin-bottom: 50px;
+  }
+
+  .about .content-box {
+    margin-bottom: 20px;
+  }
+
+  .about .content-box h2 {
+    margin-bottom: 20px;
+  }
+
+
+
+  /*-----------------------------------*\
+    #PRODUCT
+  \*-----------------------------------*/
+
+  /**
+  * product section responsive
+  */
+
+  .product h2 {
+    margin-bottom: 20px;
+  }
+
+  .product-grid {
+    grid-gap: 25px;
+  }
+
+  .product-card {
+    height: 117px;
+  }
+
+  .product-card h3 {
+    bottom: 15px;
+    left: 20px;
+  }
+
+  .btn-primary {
+    margin-top: 35px;
+  }
+
+
+
+  /*-----------------------------------*\
+    #FOOTER
+  \*-----------------------------------*/
+
+  /**
+  * footer section responsive
+  */
+
+  .footer-nav ul {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: center;
+  }
+
+  .social-links {
+    margin-bottom: 15px;
+  }
+
+
 }
