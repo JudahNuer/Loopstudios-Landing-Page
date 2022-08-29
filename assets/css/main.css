@@ -118,6 +118,15 @@ header {
   margin-bottom: 120px;
 }
 
+  /**
+  * mobile nav brand style
+  */
+
+  .mobile-nav-brand {
+    cursor: pointer;
+    display: none;
+  }
+
 /**
   * navbar nav 
   */
@@ -146,6 +155,16 @@ nav ul li::after {
 nav ul li:hover::after {
   width: 25px;
 }
+
+ /**
+ * resposive for medium desktop screen
+ */
+ 
+.nav-toggler {
+  cursor: pointer;
+  display:none;
+}
+
 
 /**
   * banner style 
@@ -218,3 +237,109 @@ nav ul li:hover::after {
   place-content: center;
   grid-gap: 30px;
 }
+
+.product-card{
+  position: relative;
+  height: 450px;
+  cursor: pointer;
+}
+
+.product-card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.product-card::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, #000b);
+}
+
+.product-card:hover::after {
+  background: linear-gradient(180deg, #fffa 40%, #555a);
+}
+
+.product-card h3 {
+  position: absolute;
+  bottom: 35px;
+  left: 40px;
+  font-size: var(--fs-h3);
+  color: var(--white);
+  z-index: 5;
+}
+
+.product-card:hover h3 {
+  color: var(--black);
+}
+
+/**
+  * btn  primary style 
+  */
+
+.btn-primary {
+  position: absolute;
+  right: var(--px);
+  top: 5px;
+  padding: 8px 35px;
+  letter-spacing: 5px;
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+.btn-primary:hover {
+  color: var(--white);
+  background: var(--black);
+}
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+/**
+  * footer section style 
+  */
+
+footer {
+  background-color: var(--black);
+  padding: 45px var(--px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-brand {
+  margin-bottom: 20px;
+}
+
+footer-brand img {
+  max-width: 140px;
+}
+
+/**
+  * footer nav styled with header nav in
+  * section: #HEADER 
+  */
+
+  .footer-right {
+    text-align: right;
+  }
+
+  .social-links {
+    margin-bottom: 20px;
+  }
+
+  .social-links a {
+    font-size: 1.8em;
+    color: var(--white);
+  }
+
+  .social-links a:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  .copyright {
+    color: var(--very-dark-gray);
+  }
+
