@@ -123,7 +123,6 @@ header {
   */
 
   .mobile-nav-brand {
-    cursor: pointer;
     display: none;
   }
 
@@ -142,13 +141,13 @@ nav ul li {
 }
 
 nav ul li::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -10px;
   left: 50%;
   width: 0;
   height: 2px;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   background: var(--white);
 }
 
